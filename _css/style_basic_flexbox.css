@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    /* background-color: silver; */
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* css3 */
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e2e2e2+0,fefefe+81 */
+    background: rgb(226,226,226); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(226,226,226,1) 0%, rgba(254,254,254,1) 81%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(226,226,226,1) 0%,rgba(254,254,254,1) 81%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(226,226,226,1) 0%,rgba(254,254,254,1) 81%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=1 ); /* IE6-9 */
+}
+
+.container{
+    max-width: 800px;
+    background-color: white;
+    padding: 8px;
+    margin: 0 auto;
+}
+
+.welcom{
+    text-align: center;
+    transition-property: color;
+    transition-duration: 0.4s;
+}
+
+.welcom:hover{
+    color: cadetblue;
+}
+
+.row1{
+    display: flex;
+}
+
+.box1{
+    flex: 1;
+    background-color: silver;
+    text-align: center;
+}
+
+.box2{
+    flex: 1;
+    background-color: skyblue;
+    text-align: center;
+}
+
+.box3{
+    flex: 1;
+    background-color: cadetblue;
+    text-align: center;
+}
+
+.row1 > div{
+    border: 1px solid gray;
+    transition-property: 2s all;
+}
+
+.row1 > div:hover{
+    transform: scale(1.2, 1.2);
+    /* transform: rotate(); */
+}

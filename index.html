@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="_css/index.css">
+    <script>
+        var movie;
+
+        function Movie(_image,_name){
+            this.image = _image;
+            this.name = _name;
+        }
+
+        Movie.prototype.addToHtml = function(){
+            this.newBox = document.createElement("div");
+        }
+
+        function init(){
+            movie = new Movie("imag0","name0");
+            movie.addToHtml();
+        }
+    </script>
+</head>
+<body onload="init()">
+    <header class="container_fluid">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Map</a></li>
+                    <li><a href="#">Content</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <form>
+                    <input type="text" id="id_input">
+                    <button><img src="images/glass.png"></button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="strip container_fluid">
+        <div class="container">
+            <h1>Netanel Davidov</h1>
+        </div>
+        <div class="circle container">
+            <img src="images/user.png">
+        </div>
+    </div>
+    <div class="blocks container_fluid">
+        <div class="container">
+             <div class="row">
+                 <div class="box">
+                     <h3>הקלטות</h3>
+                     <div>
+                         <img src="images/record.png">
+                         <p>
+                             
+                         </p>
+                         <a>more info</a>
+                     </div>
+                 </div>
+                 
+                 <div class="box">
+                     <h3>פרוייקטים</h3>
+                     <div>
+                         <img src="images/space.png">
+                         <p>
+                             
+                         </p>
+                         <a>more info</a>
+                     </div>
+                 </div>
+                 
+                 <div class="box">
+                     <h3>וידאו</h3>
+                     <div>
+                         <img src="images/video.png">
+                         <p>
+                             
+                         </p>
+                         <a>more info</a>
+                     </div>
+                 </div>
+                 
+                 <div class="box box_end">
+                     <h3>שירים</h3>
+                     <div>
+                         <img src="images/music.png">
+                         <p>
+                             
+                         </p>
+                         <a>more info</a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+      <footer class="container_fluid">
+        <div class="container">
+         footer
+         </div>
+     </footer>
+     <script>
+         alert("Hello new user!")
+     </script>
+</body>
+</html>
